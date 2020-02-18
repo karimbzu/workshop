@@ -167,7 +167,7 @@ EOF
 chmod +x deploy.sh
 ```
 
-### Cluster Role for to apply to users to give them read access to cluster resources
+### Cluster Role for Openshift users
 ```
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
