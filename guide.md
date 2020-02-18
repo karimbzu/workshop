@@ -234,4 +234,4 @@ git push origin master
 docker rmi $(docker images -a -q) --force
 ```
 ## CI/CD Pipeline
-
+#### In this demo we will demonstrate how to deploy applications using CI/CD Pipeline in Openshift 4.2
