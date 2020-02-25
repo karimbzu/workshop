@@ -122,8 +122,8 @@ curl ${APP_URL}
 ### Create a .env environment variable and a script deploy.sh. Use ./deploy.sh everytime you want to deploy to the
 ```
 cat <<EOF >.env
-INTERNAL_IMAGE_REGISTRY=${INTERNAL_IMAGE_REGISTRY}
-IMAGE_REGISTRY=${IMAGE_REGISTRY}
+INTERNAL_IMAGE_REGISTRY=image-registry.openshift-image-registry.svc:5000
+IMAGE_REGISTRY=default-route-openshift-image-registry.apps.ocp.tmrnd.com.my
 NAMESPACE=${NAMESPACE}
 APP_NAME=$(yq r app-deploy.yaml metadata.name)
 IMAGE_NAME=\${APP_NAME}
