@@ -227,6 +227,7 @@ git remote set-url origin https://github.com/karimbzu/express-library
 git add .
 git status
 git commit -m "first commit"  /  git commit -a
+git pull (if you want to merge with existing branch)
 git push origin master
 ```
 ### Remove Docker Images
