@@ -22,8 +22,23 @@ appsody init nodejs-express
 ```
 appsody run
 ```
-#### Change some contents in the code and see the update during runtime
+#### Add logging to the application
+```
+npm install morgan
+//add below contents in app.js to enable logging
+const morgan = require('morgan')
+app.use(morgan('combined'))
+```
 
+#### Default Endpoints
+
+```
+Health endpoint: http://localhost:3000/health
+Liveness endpoint: http://localhost:3000/live
+Readiness endpoint: http://localhost:3000/ready
+Metrics endpoint: http://localhost:3000/metrics
+Dashboard endpoint: http://localhost:3000/appmetrics-dash (development only)
+```
 ## Cluster Deployment
 
 ### We are going to use OpenShift cluter 4.2 and 3.11 for this demonstration
