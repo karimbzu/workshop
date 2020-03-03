@@ -101,7 +101,6 @@ appsody deploy --generate-only -n $NAMESPACE
 
 ### Build and push the application image to the remote registry
 
-### If you want to use Serverless then append --knative to the appsody deploy
 ### If not using knative
 
 ```
