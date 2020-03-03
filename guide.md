@@ -39,6 +39,12 @@ Readiness endpoint: http://localhost:3000/ready
 Metrics endpoint: http://localhost:3000/metrics
 Dashboard endpoint: http://localhost:3000/appmetrics-dash (development only)
 ```
+#### Local application edits and live updates
+```
+app.get('/foo', (req, res) => {
+  res.json({msg: 'bar'});
+});
+```
 ## Cluster Deployment
 
 ### We are going to use OpenShift cluter 4.2 and 3.11 for this demonstration
