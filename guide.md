@@ -2,8 +2,10 @@
 
 ## Local Deployment
 #### For Local Deployment the following prerequisites must be met
-#### For windows Users: Visual Studio Code with codewind+git extensions and docker installed
-#### For Linux CLI: Docker CE and appsody should be installed 
+```
+For windows Users: Visual Studio Code with codewind+git extensions and docker installed
+For Linux CLI: Docker CE and appsody should be installed 
+```
 #### for reference: 
 ```
  1) https://appsody.dev/docs/getting-started/installation
