@@ -63,7 +63,7 @@ docker login -u $(oc whoami) -p $(oc whoami -t) $IMAGE_REGISTRY
 
 ```
 export INTERNAL_IMAGE_REGISTRY=docker-registry.default.svc:5000
-export IMAGE_REGISTRY=
+export IMAGE_REGISTRY=docker-registry-default.apps.cp.tmrnd.com.my
 docker login -u $(oc whoami) -p $(oc whoami -t) $IMAGE_REGISTRY
 ```
 
