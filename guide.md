@@ -227,7 +227,11 @@ userNames:
 ### Serverless setup
 #### Apply Patch
 ```
-oc patch ksvc express-locallibrary-tutorial --type merge -p '{"spec":{"template":{"metadata":{"annotations":{"autoscaling.knative.dev/maxScale": "5"}}}},"spec":{"template":{"metadata":{"annotations":{"autoscaling.knative.dev/target": "5"}}}}}'
+oc patch ksvc express-locallibrary-tutorial --type merge -p '{"spec":{"template":{"metadata":{"annotations":{"autoscaling.knative.dev/maxScale": "5"}}}}}'
+```
+```
+oc patch ksvc express-locallibrary-tutorial --type merge -p '{"spec":{"template":{"metadata":{"annotations":{"autoscaling.knative.dev/target": "5"}}}}}'
+
 ```
 #### Or edit manually
 ```
