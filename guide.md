@@ -247,7 +247,7 @@ spec:
 ```
 #### Apply the load benchmarking
 ```
-hey -c 50 -z 10s \
+hey -c 100 -z 10s \
   "${SVC_URL}/?sleep=3&upto=10000&memload=100"
 ```
 ### Git Key Commands
@@ -267,9 +267,9 @@ docker rmi $(docker images -a -q) --force
 ```
 ## CI/CD Pipeline
 #### In this demo we will demonstrate how to deploy applications using CI/CD Pipeline in Openshift 4.2
-# Notes for Red Hat OpenShift Installations
+### Notes for Red Hat OpenShift Installations
 
-### Using buildah in your pipelines
+#### Using buildah in your pipelines
 
 If you plan to use `buildah` in your Pipelines, you will need to set an additional permission on any service account that will be used to run a pipeline by using the following command:
 
@@ -278,7 +278,7 @@ If you plan to use `buildah` in your Pipelines, you will need to set an addition
       ```
 
 
-### Pushing to the OpenShift registry using webhooks
+#### Pushing to the OpenShift registry using webhooks
 
 Let's assume you wish to create a webhook such that created PipelineRuns will use the provided service account `tekton-webhooks-extension`.
 
@@ -297,7 +297,7 @@ or
 If using a self-signed certificate for the internal RedHat Docker registry, you will need to use a `buildah` task that skips self-signed certificate verifications too, for example by using the Tekton catalog's `buildah` task and setting TLS_VERIFY to default to `false`
 
 
-### Defined SCC
+#### Defined SCC
 
 This project has been tested with the following scc (from `oc get scc`):
 
