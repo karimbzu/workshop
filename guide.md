@@ -247,8 +247,7 @@ spec:
 ```
 #### Apply the load benchmarking
 ```
-hey -c 100 -z 10s \
-  "${SVC_URL}/?sleep=3&upto=10000&memload=100"
+hey -c 100 -z 10s "${SVC_URL}/?sleep=3&upto=10000&memload=100"
 ```
 ### Git Key Commands
 ```
