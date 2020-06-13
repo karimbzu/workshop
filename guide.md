@@ -75,6 +75,7 @@ docker login -u $(oc whoami) -p $(oc whoami -t) $IMAGE_REGISTRY
 }
 systemctl daemon-reload
 systemctl restart docker
+```
 
 ## Create Application
 
