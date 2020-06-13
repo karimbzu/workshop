@@ -68,6 +68,13 @@ docker login -u $(oc whoami) -p $(oc whoami -t) $IMAGE_REGISTRY
 ```
 
 ### If using another openshift cluster and get an error about https/ssl., then add openshift URL to the Docker as insecure-registry
+```
+ vi /etc/docker/daemon.json
+{
+"insecure-registries" : ["docker-registry-default.apps.192.168.80.130.nip.io","docker-registry.default.svc:5000"]
+}
+systemctl daemon-reload
+systemctl restart docker
 
 ## Create Application
 
